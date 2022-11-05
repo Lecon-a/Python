@@ -44,3 +44,18 @@ removedItem = fruit[fruit.index("toyota")]
 fruit.remove("toyota")
 output = "{} was removed from the fruit extends car list: {}."
 print(output.format(removedItem, fruit))
+#reverse() - this method reverses the order of a given list
+fruit.reverse()
+print(fruit)
+#sort() - sorts list by default in ascending order
+fruit.sort()
+print(fruit)
+#this sort() can be modified to return in a specific order
+fruit.sort(reverse=True)
+print(fruit)
+#define function
+def myFunc(item):
+    return len(item)
+#also a function can be passed into it.
+fruit.sort(reverse=False, key=myFunc)
+print("Sorted with function parameter: ", fruit)
