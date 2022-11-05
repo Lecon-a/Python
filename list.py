@@ -59,3 +59,36 @@ def myFunc(item):
 #also a function can be passed into it.
 fruit.sort(reverse=False, key=myFunc)
 print("Sorted with function parameter: ", fruit)
+#using list() constructor to create a new list object
+thislist = list(("apple", "banana", "cherry"))
+print(thislist)
+
+print("\n:: Summary ::")
+output = '''
+Python Collections (Arrays)
+There are four collection data types in the Python programming language:
+
+List is a collection which is ordered and changeable. Allows duplicate members.
+Tuple is a collection which is ordered and unchangeable. Allows duplicate members.
+Set is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.
+Dictionary is a collection which is ordered** and changeable. No duplicate members.
+
+Note:
+When choosing a collection type, it is useful to understand the properties of that type.
+Choosing the right type for a particular data set could mean retention of meaning, and,
+it could mean an increase in efficiency or security.
+'''
+print(output)
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+
+print(newlist)
+
+# List comprehension - shortens looping through list syntax/code
+fruitsComprehension = [x for x in fruits if 'a' in x]
+print("List comprehension: ", fruitsComprehension)
