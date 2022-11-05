@@ -23,3 +23,8 @@ banana_freq = fruit_2.count("banana")
 output = "Banana occurs {} {}."
 freq = "time" if banana_freq <= 1 else "times"
 print(output.format(banana_freq, freq))
+
+#extend() - this add items of an iterable collection to the end of a current list
+car = ["toyota", "bmw", "ford", "volvo"]
+fruit.extend(car)
+print("Extend fruit list with car list: ", fruit)
