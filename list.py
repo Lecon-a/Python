@@ -28,3 +28,11 @@ print(output.format(banana_freq, freq))
 car = ["toyota", "bmw", "ford", "volvo"]
 fruit.extend(car)
 print("Extend fruit list with car list: ", fruit)
+#index() - this returns the position of a specified item
+print("What is the position of \"BMW\"?", fruit.index("bmw"))
+#insert(index, item) - this method add an item to a specific position in a given list
+fruit.insert(4, "lemon")
+fruit.insert(9, "goron tula")
+fruit.insert(5, "bitter gourd")
+#display
+print(fruit)
