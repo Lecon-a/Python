@@ -39,3 +39,8 @@ print(fruit)
 #pop - remove a specified item from a given list using its index
 fruit.pop(0)
 print(fruit)
+#remove() - remove specified item from a given list
+removedItem = fruit[fruit.index("toyota")]
+fruit.remove("toyota")
+output = "{} was removed from the fruit extends car list: {}."
+print(output.format(removedItem, fruit))
