@@ -36,3 +36,6 @@ fruit.insert(9, "goron tula")
 fruit.insert(5, "bitter gourd")
 #display
 print(fruit)
+#pop - remove a specified item from a given list using its index
+fruit.pop(0)
+print(fruit)
