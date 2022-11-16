@@ -92,3 +92,32 @@ print(newlist)
 # List comprehension - shortens looping through list syntax/code
 fruitsComprehension = [x for x in fruits if 'a' in x]
 print("List comprehension: ", fruitsComprehension)
+
+newlist = [x if x != "banana" else "orange" for x in fruits]
+
+print(newlist)
+numbers = [1, 2, 3, 4, 5]
+#useLambda = lambda numbers : x*2
+"""
+Copy a List
+
+You cannot copy a list simply by typing list2 = list1,
+because: list2 will only be a reference to list1, and changes made in list1 will automatically
+also be made in list2.
+
+There are ways to make a copy, one way \is to use the built-in List method copy().
+"""
+copyList = numbers
+print("Copied list:", copyList)
+
+copyList[1:3] = [23, 45, 100]
+print("The changes affected the original list:", numbers)
+
+tupleVar = ('tuple1', 'tuple2', 'tuple3')
+print(tupleVar)
+#unpacking tuple values into variables
+t1, t2, t3 = tupleVar
+print(t1, t2, t3)
+#using asterisk*
+t1, *t2 = tupleVar
+print(t1, t2)
